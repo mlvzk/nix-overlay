@@ -11,6 +11,8 @@ stdenv.mkDerivation {
 
   buildInputs = [ libX11 libXinerama libXft ];
 
+  prePatch = ''sed -i "s@/usr/local@$out@" config.mk'';
+
   buildPhase = "make";
 
   meta = with stdenv.lib; {
