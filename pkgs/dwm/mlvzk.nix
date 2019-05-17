@@ -5,8 +5,8 @@ stdenv.mkDerivation {
 
   src = fetchgit {
     url = "https://github.com/mlvzk/dwm.git";
-    rev = "94387a4614b528e5014eabb48e8ac950b8fc4d2f";
-    sha256 = "1c7dk5w6ws0q0jpsyws7mdz0qcjayvr0m4l3i2318shjcj567mnl";
+    rev = "master";
+    sha256 = "0fsa56kwdj2p8zmzksi3kh4bm3xf9ncv66bc4hq1kw399pqgwxiz";
   };
 
   buildInputs = [ libX11 libXinerama libXft ];
