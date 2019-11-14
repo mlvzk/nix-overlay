@@ -1,13 +1,15 @@
-{ stdenv, fetchgit, libX11, libXinerama, libXft }:
+{ stdenv, fetchFromGitHub, libX11, libXinerama, libXft }:
 
 stdenv.mkDerivation {
   name = "dwm-mlvzk";
 
-  src = fetchgit {
-    url = "https://github.com/mlvzk/dwm.git";
-    rev = "master";
+  src = fetchFromGitHub {
+    owner = "mlvzk";
+    repo = "dwm";
+    rev = "60c066e5df19369090d11d59f04ce8e90505798d";
     sha256 = "0fsa56kwdj2p8zmzksi3kh4bm3xf9ncv66bc4hq1kw399pqgwxiz";
   };
+
 
   buildInputs = [ libX11 libXinerama libXft ];
 
