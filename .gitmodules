@@ -1,0 +1,6 @@
+[submodule "pkgs/dwm/dwm"]
+	path = pkgs/dwm/dwm
+	url = https://github.com/mlvzk/dwm.git
+[submodule "pkgs/st/st"]
+	path = pkgs/st/st
+	url = https://github.com/mlvzk/st.git

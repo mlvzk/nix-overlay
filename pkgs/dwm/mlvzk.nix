@@ -3,12 +3,13 @@
 stdenv.mkDerivation {
   name = "dwm-mlvzk";
 
-  src = fetchFromGitHub {
-    owner = "mlvzk";
-    repo = "dwm";
-    rev = "60c066e5df19369090d11d59f04ce8e90505798d";
-    sha256 = "0fsa56kwdj2p8zmzksi3kh4bm3xf9ncv66bc4hq1kw399pqgwxiz";
-  };
+  src = ./dwm;
+  # src = fetchFromGitHub {
+  #   owner = "mlvzk";
+  #   repo = "dwm";
+  #   rev = "07040d383c42f75b534963a20258af9899af2ef5";
+  #   sha256 = "139zij9ljj5nx4db2sphw6yb0jg5m0hv9gj9p38z5riigpilnbz3";
+  # };
 
 
   buildInputs = [ libX11 libXinerama libXft ];
